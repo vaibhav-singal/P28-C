@@ -10,6 +10,7 @@ class Tree {
         this.width=width;
         this.height=height;
         this.image = loadImage("tree.png");
+    
         this.body=Bodies.rectangle(this.x ,this.y, this.width, this.height, options);
         World.add(world,this.body);
     }
@@ -17,9 +18,12 @@ class Tree {
         var pos =this.body.position;
         push();
         translate(this.body.x , this.body.y);
-        imageMode(CENTER);
+        // imageMode(CENTER);
+        rectMode(CENTER);
         fill("brown");
-        image(this.image,pos.x, pos.y, this.width, this.height);
+       // image(this.image,pos.x, pos.y, this.width, this.height);
+       rect(pos.x, pos.y, this.width, this.height);
+
         pop();
     }
 }

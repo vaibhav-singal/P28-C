@@ -28,7 +28,8 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-    treeObj = new Tree(600,275,500,500);
+    treeObj = new Tree(600,300,300,400);
+    
     mango1 = new Mango(600,100,40);
     mango2 = new Mango(700,125,40);
     mango3 = new Mango(500,170,40);
